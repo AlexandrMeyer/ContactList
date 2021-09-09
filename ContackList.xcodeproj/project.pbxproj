@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		B5ECB9B326E7571A00DA9A14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECB9B226E7571A00DA9A14 /* AppDelegate.swift */; };
 		B5ECB9B526E7571A00DA9A14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECB9B426E7571A00DA9A14 /* SceneDelegate.swift */; };
-		B5ECB9B726E7571A00DA9A14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECB9B626E7571A00DA9A14 /* ViewController.swift */; };
 		B5ECB9BA26E7571A00DA9A14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5ECB9B826E7571A00DA9A14 /* Main.storyboard */; };
 		B5ECB9BC26E7571D00DA9A14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5ECB9BB26E7571D00DA9A14 /* Assets.xcassets */; };
 		B5ECB9BF26E7571D00DA9A14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5ECB9BD26E7571D00DA9A14 /* LaunchScreen.storyboard */; };
+		B5ECB9C726E7579000DA9A14 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECB9C626E7579000DA9A14 /* ContactListViewController.swift */; };
+		B5ECB9C926E7593900DA9A14 /* AdvancedContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECB9C826E7593900DA9A14 /* AdvancedContactListViewController.swift */; };
+		B5ECB9CB26E790EB00DA9A14 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECB9CA26E790EB00DA9A14 /* Person.swift */; };
+		B5ECB9CD26E7961900DA9A14 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECB9CC26E7961900DA9A14 /* DataManager.swift */; };
+		B5ECB9CF26E7BC4200DA9A14 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECB9CE26E7BC4200DA9A14 /* TabBarViewController.swift */; };
+		B5ECB9D626E7E3C900DA9A14 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECB9D526E7E3C900DA9A14 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B5ECB9AF26E7571A00DA9A14 /* ContackList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContackList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5ECB9B226E7571A00DA9A14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5ECB9B426E7571A00DA9A14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B5ECB9B626E7571A00DA9A14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B5ECB9B926E7571A00DA9A14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5ECB9BB26E7571D00DA9A14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5ECB9BE26E7571D00DA9A14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5ECB9C026E7571D00DA9A14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5ECB9C626E7579000DA9A14 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		B5ECB9C826E7593900DA9A14 /* AdvancedContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedContactListViewController.swift; sourceTree = "<group>"; };
+		B5ECB9CA26E790EB00DA9A14 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		B5ECB9CC26E7961900DA9A14 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		B5ECB9CE26E7BC4200DA9A14 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		B5ECB9D526E7E3C900DA9A14 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,68 @@
 		B5ECB9B126E7571A00DA9A14 /* ContackList */ = {
 			isa = PBXGroup;
 			children = (
-				B5ECB9B226E7571A00DA9A14 /* AppDelegate.swift */,
-				B5ECB9B426E7571A00DA9A14 /* SceneDelegate.swift */,
-				B5ECB9B626E7571A00DA9A14 /* ViewController.swift */,
-				B5ECB9B826E7571A00DA9A14 /* Main.storyboard */,
-				B5ECB9BB26E7571D00DA9A14 /* Assets.xcassets */,
-				B5ECB9BD26E7571D00DA9A14 /* LaunchScreen.storyboard */,
+				B5ECB9D126E7BC8A00DA9A14 /* ViewControllers */,
+				B5ECB9D026E7BC7800DA9A14 /* Model */,
+				B5ECB9D726E88D3200DA9A14 /* Service */,
+				B5ECB9D226E7BC9E00DA9A14 /* Storyboard */,
+				B5ECB9D426E7DB4A00DA9A14 /* Resources */,
+				B5ECB9D326E7BCB400DA9A14 /* Other */,
 				B5ECB9C026E7571D00DA9A14 /* Info.plist */,
 			);
 			path = ContackList;
+			sourceTree = "<group>";
+		};
+		B5ECB9D026E7BC7800DA9A14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5ECB9CA26E790EB00DA9A14 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5ECB9D126E7BC8A00DA9A14 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5ECB9C626E7579000DA9A14 /* ContactListViewController.swift */,
+				B5ECB9D526E7E3C900DA9A14 /* DetailViewController.swift */,
+				B5ECB9C826E7593900DA9A14 /* AdvancedContactListViewController.swift */,
+				B5ECB9CE26E7BC4200DA9A14 /* TabBarViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B5ECB9D226E7BC9E00DA9A14 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B5ECB9B826E7571A00DA9A14 /* Main.storyboard */,
+				B5ECB9BD26E7571D00DA9A14 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		B5ECB9D326E7BCB400DA9A14 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B5ECB9B426E7571A00DA9A14 /* SceneDelegate.swift */,
+				B5ECB9B226E7571A00DA9A14 /* AppDelegate.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		B5ECB9D426E7DB4A00DA9A14 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5ECB9BB26E7571D00DA9A14 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B5ECB9D726E88D3200DA9A14 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B5ECB9CC26E7961900DA9A14 /* DataManager.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +200,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5ECB9B726E7571A00DA9A14 /* ViewController.swift in Sources */,
 				B5ECB9B326E7571A00DA9A14 /* AppDelegate.swift in Sources */,
+				B5ECB9CD26E7961900DA9A14 /* DataManager.swift in Sources */,
 				B5ECB9B526E7571A00DA9A14 /* SceneDelegate.swift in Sources */,
+				B5ECB9CB26E790EB00DA9A14 /* Person.swift in Sources */,
+				B5ECB9CF26E7BC4200DA9A14 /* TabBarViewController.swift in Sources */,
+				B5ECB9C726E7579000DA9A14 /* ContactListViewController.swift in Sources */,
+				B5ECB9C926E7593900DA9A14 /* AdvancedContactListViewController.swift in Sources */,
+				B5ECB9D626E7E3C900DA9A14 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = ContackList/Other/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -271,6 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = ContackList/Other/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -296,7 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AlexandrMeyer.ContackList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +385,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AlexandrMeyer.ContackList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
