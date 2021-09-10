@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bRl-TU-Po5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ouw-xU-Cnk">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -50,6 +50,7 @@
                             <outlet property="delegate" destination="cO6-0Z-XJT" id="cQy-aO-Q2W"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" selectedImage="person.circle" catalog="system" systemItem="contacts" id="GKB-3V-40E"/>
                     <navigationItem key="navigationItem" title="Root View Controller" id="BrM-yb-Vso"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g83-Up-72k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -124,28 +125,12 @@
                             <outlet property="delegate" destination="xyq-cw-DPR" id="XwX-Tf-4fD"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="ieL-Ia-x0m"/>
                     <navigationItem key="navigationItem" title="Root View Controller" id="2Oc-Ff-6Hh"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X7f-oz-0GO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1199" y="23"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="ywx-mS-9bS">
-            <objects>
-                <navigationController id="Edw-fl-t2e" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="2al-2V-jFJ"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="pR5-VY-9Kj">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="xyq-cw-DPR" kind="relationship" relationship="rootViewController" id="2mG-Pe-ui9"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GTC-iV-FiH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="422" y="23"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Veu-nA-fVG">
@@ -157,34 +142,36 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="cO6-0Z-XJT" kind="relationship" relationship="rootViewController" id="ntH-BP-s5h"/>
+                        <segue destination="bRl-TU-Po5" kind="relationship" relationship="rootViewController" id="FwT-eF-b2g"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffq-sD-H8n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="422" y="-698"/>
+            <point key="canvasLocation" x="-636" y="-311"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="cOX-LT-2W1">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bRl-TU-Po5" customClass="TabBarViewController" customModule="ContackList" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="qA3-Rl-bv1"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DWo-YS-ijM">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Ouw-xU-Cnk" kind="relationship" relationship="viewControllers" id="Lyz-j8-5nr"/>
-                        <segue destination="Edw-fl-t2e" kind="relationship" relationship="viewControllers" id="COi-Bs-EcU"/>
+                        <segue destination="cO6-0Z-XJT" kind="relationship" relationship="viewControllers" id="05M-ao-Tk7"/>
+                        <segue destination="xyq-cw-DPR" kind="relationship" relationship="viewControllers" id="tuh-ao-tQz"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l8N-1I-vs6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-417.39130434782612" y="-311.38392857142856"/>
+            <point key="canvasLocation" x="193" y="-311"/>
         </scene>
     </scenes>
     <resources>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

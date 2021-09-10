@@ -9,11 +9,15 @@ import UIKit
 
 class AdvancedContactListViewController: UITableViewController {
     
-    var person: [Person]!
+    var persons: [Person] = []
     
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return person.count
+        return persons.count
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        persons[section].fullName
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -24,26 +28,21 @@ class AdvancedContactListViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "contactCell", for: indexPath)
         
-        if cell.tag == 0 {
-            var content = cell.defaultContentConfiguration()
-            
-            content.image = UIImage(systemName: "phone")
-            content.text = person[indexPath.row].phoneNumber
-            
-            cell.contentConfiguration = content
+        let person = persons[indexPath.section]
+        var content = cell.defaultContentConfiguration()
         
+        if indexPath.row == 0 {
+            content.image = UIImage(systemName: "phone")
+            content.text = person.phoneNumber
         } else {
-            var content = cell.defaultContentConfiguration()
-            
             content.image = UIImage(systemName: "tray")
-            content.text = person[indexPath.row].email
-            
-            cell.contentConfiguration = content
+            content.text = person.email
         }
+        cell.contentConfiguration = content
         return cell
     }
-    
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        person[section].fullName
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
+   
 }

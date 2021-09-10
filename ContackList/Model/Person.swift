@@ -15,13 +15,26 @@ struct Person {
         "\(firstName) \(lastName)"
     }
     
-    static func randomPerson() -> Person {
-        Person(
-            firstName: DataManager.shared.firstNames.randomElement() ?? "",
-            lastName: DataManager.shared.lastNames.randomElement() ?? "",
-            phoneNumber: DataManager.shared.phoneNumbers.randomElement() ?? "",
-            email: DataManager.shared.email.randomElement() ?? ""
-        )
+    static func getContactList() -> [Person] {
+        var persons: [Person] = []
+        
+        let names = DataManager.shared.firstNames.shuffled()
+        let surnume = DataManager.shared.lastNames.shuffled()
+        let phones = DataManager.shared.phoneNumbers.shuffled()
+        let email = DataManager.shared.email.shuffled()
+        
+        let iterationCount = min(names.count, surnume.count, phones.count, email.count)
+        
+        for index in 0..<iterationCount {
+            let person = Person(
+                firstName: names[index],
+                lastName: surnume[index],
+                phoneNumber: phones[index],
+                email: email[index]
+            )
+            persons.append(person)
+        }
+        return persons
     }
 }
 
